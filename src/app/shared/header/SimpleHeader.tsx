@@ -10,12 +10,12 @@ import Icons from "@/utils/Icons";
 const navList = [
   {
     name: "Upcoming Events",
-    href: "/events",
+    href: "#upcoming",
     Icon: Icons.Property,
   },
   {
     name: "Social",
-    href: "/social",
+    href: "#social",
     Icon: Icons.Property,
   },
 ];

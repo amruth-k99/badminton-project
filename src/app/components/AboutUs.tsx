@@ -4,7 +4,7 @@ import Heading from "../shared/heading";
 
 export function AboutUs() {
   return (
-    <div className="max-w-7xl mx-auto my-16">
+    <div className="max-w-7xl mx-auto my-16" id="social">
       <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
         <div className="col-span-3 my-auto">
           <p className="text-md text-left text-gray-600">About</p>

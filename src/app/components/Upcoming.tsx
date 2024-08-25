@@ -60,7 +60,7 @@ export function UpcomingEvents() {
     },
   ];
   return (
-    <div className="max-w-7xl mx-auto my-16 pt-10">
+    <div className="max-w-7xl mx-auto my-16 pt-10" id="upcoming">
       <div className="">
         <div className="text-center">
           <p className="text-md  text-gray-600">Important Dates for</p>

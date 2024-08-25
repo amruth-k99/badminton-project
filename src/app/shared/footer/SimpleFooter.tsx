@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const SimpleFooter = () => {
   const socialLinks = {
-    facebook: "https://facebook.com",
-    instagram: "https://instagram.com",
+    facebook: "https://www.facebook.com/EasternBadminton/photos",
+    instagram: "https://www.instagram.com/ectbc.official/",
     twitter: "https://twitter.com",
     linkedin: "https://linkedin.com",
     github: "https://github.com",
@@ -17,15 +17,15 @@ const SimpleFooter = () => {
     },
     {
       name: "About",
-      href: "/about",
+      href: "#social",
     },
     {
       name: "Sponsor",
-      href: "/sponsor",
+      href: "#sponsors",
     },
     {
       name: "Contact",
-      href: "/contact",
+      href: "#social",
     },
   ];
   return (
@@ -68,7 +68,12 @@ const SimpleFooter = () => {
             </svg>
           </a>
 
-          <a href="#" className="text-gray-700 hover:text-black">
+          <a
+            href={socialLinks.twitter}
+            target="_blank"
+            rel="noreferrer"
+            className="text-gray-700 hover:text-black"
+          >
             <span className="sr-only">Instagram</span>
             <svg
               className="h-6 w-6"
@@ -84,7 +89,12 @@ const SimpleFooter = () => {
             </svg>
           </a>
 
-          <a href="#" className="text-gray-400 hover:text-black">
+          <a
+            href={socialLinks.twitter}
+            target="_blank"
+            rel="noreferrer"
+            className="text-gray-400 hover:text-black"
+          >
             <span className="sr-only">Twitter</span>
             <svg
               className="h-6 w-6"
