@@ -1,4 +1,9 @@
 import { Metadata } from "next";
+import Carousel from "./components/Carousel";
+import AboutUs from "./components/AboutUs";
+import UpcomingEvents from "./components/Upcoming";
+import Sponsor from "./components/Sponsor";
+import Participants from "./components/Participants";
 
 export const metadata: Metadata = {
   title: "Eastern Collegiate Team Badminton Championships",
@@ -33,14 +38,21 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="pt-16">
+    <main className="pt-10">
       {/* 1. carousel */}
-      {/* 2. About */}
-      {/* 3. Team */}
+      <Carousel />
+
       {/* 4. Upcoming Events */}
+      <UpcomingEvents />
+
       {/* 5. Participating Colleges */}
+      <Participants />
+
       {/* 6. Sponsor */}
-      {/* 7. Social */}
+      <Sponsor />
+
+      {/* 2. About */}
+      <AboutUs />
     </main>
   );
 }
