@@ -21,12 +21,12 @@ export default function Carousel() {
         {slides.map((_, i) => (
           <div
             key={"slider_" + i}
-            className="h-[70vh] outline-none active:outline-none focus:outline-none"
+            className="md:h-[85vh] outline-none my-auto active:outline-none focus:outline-none"
           >
             <Image
               width={800}
               height={800}
-              className="h-full w-auto mx-auto"
+              className="md:h-full my-auto w-auto mx-auto"
               src={`/carousel/${i + 1}.jpg`}
               alt="Logo"
             />

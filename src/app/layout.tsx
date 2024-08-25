@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import SimpleHeader from "@/app/shared/header/SimpleHeader";
 import SimpleFooter from "./shared/footer/SimpleFooter";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = localFont({ src: "../../public/fonts/Poppins-Medium.ttf" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html className={`light ${inter.className}`} lang="en">
-      <body className="bg-gray-50">
+      <body className="bg-white">
         <SimpleHeader />
         {children}
         <SimpleFooter />

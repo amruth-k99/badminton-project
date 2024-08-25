@@ -89,7 +89,7 @@ const SimpleHeader = () => {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="text-base font-medium text-gray-900 hover:text-white"
+                  className="text-base font-medium text-gray-900 hover:text-black border-b-2 border-b-gray-50 hover:border-b-black pb-2 transition-all duration-100 ease-in-out"
                 >
                   {item.name}
                 </Link>
